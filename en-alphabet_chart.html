@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabets - ReadAloud</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Mansalva&display=swap" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Alphabet Chart</h1>
+    <p class="subheading">Read along the audio and see alphabets highlight below<p>
+        <div id="alphabet" class="readaloud" data-readaloud-player="true">
+            <audio id="ch01_readAloud">
+                <source src="alphabets.mp3" type="audio/mpeg" />
+                <p>Your device or browser does not support audio.</p>
+            </audio>
+            <div class="audioControls">
+                <button class="btn readaloud_playButton" id="playPauseToggleButton" data-playing="false" data-pressed="false" title="Play/Pause Button" role="button" aria-label="togglePlay"></button>
+                <button class="btn readaloud_stopButton" id="stopButton" data-pressed="false" title="Stop Button" role="button" aria-label="stop"></button>
+                <button class="btn readaloud_speedToggle" id="speedButton" data-pressed="false"  title="Speed Button" role="button" aria-label="speed"></button>
+            </div>
+            <div class="grid chapter-ReadAloud">
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="00.800">A</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="01.300">B</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="02.100">C</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="02.900">D</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="03.900">E</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="04.950">F</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="05.900">G</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="06.800">H</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="07.400">I</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="08.200">J</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="09.000">K</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="09.960">L</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="10.900">M</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="11.700">N</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="12.300">O</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="13.400">P</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="13.999">Q</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="14.800">R</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="15.800">S</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="16.800">T</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="17.800">U</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="18.800">V</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="19.800">W</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="20.800">X</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-1" data-playhead="21.800">Y</p>
+                </div>
+                <div class="block">
+                    <p class="letter" id="L1-2" data-playhead="22.800">Z</p>
+                </div>
+            </div>
+        </div>
+    <script src="custom-read-aloud-0.1.6.js" type="text/javascript"></script>
+    <script src="readaloud.js" type="text/javascript"></script>
+    <script type="text/javascript">ReadAloud('#ch01_readAloud', {});</script>
+</body>
+</html>

@@ -6,14 +6,14 @@ body {
   }
   
   h1 {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     text-transform: uppercase;
     color: #2a9d8f;
-    font-size: 3em;
+    font-size: 2.6em;
   }
   
   .subheading {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   
   .grid {
@@ -45,7 +45,14 @@ body {
   
   .letter {
     font-weight: bold;
-    font-size: 4em;
+    font-size: 2.7em;
+    color: #e76f51;
+    text-transform: uppercase;
+  }
+
+  .urdu .letter {
+    font-weight: bold;
+    font-size: 2.8em;
     color: #e76f51;
     text-transform: uppercase;
   }
@@ -72,7 +79,7 @@ body {
     padding: 0;
     width: auto;
     overflow: visible;
-    background: #264653;
+    background: #1F354B;
     color: inherit;
     font: inherit;
     line-height: normal;

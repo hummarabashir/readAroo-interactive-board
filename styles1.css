@@ -1,7 +1,7 @@
 :root {
     --dark-navy: #1F354B;
     --navy: #294461;
-    --green: #11C684;
+    --green: #11c684;
     --purple: #6B74E0;
     --pink: #F878B5;
     --blue: #0671D5;
@@ -25,6 +25,7 @@
     background-position: -180px 150px;
     background-repeat: no-repeat;
     background-size: auto 500px;
+    font-family: "Mansalva", cursive;
   }
   
   h1 {
@@ -49,8 +50,9 @@
   }
   
   .title {
-    color: var(--yellow);
+    color: var(--green);
     margin: 0;
+    font-size: 2.6em;
   }
   
   .title-span {
@@ -59,10 +61,10 @@
   }
   
   .title-image {
-    width: 60px;
-    height: 55px;
+    width: 80px;
+    height: 70px;
     margin: 0;
-    padding-right: 5px;
+    padding-right: 10px;
   }
   
   .back-arrow {
@@ -122,12 +124,11 @@
   
   .greeting {
     text-align: center;
-    margin-top: 0.5em;
+    margin: 1em;
     font-size: 1.25rem;
   }
   .hexagon, .hexagon:before {
     background: #f7bf31;
-    background: var(--yellow);
 }
 hr{
     border-color: #476d96;
@@ -139,9 +140,9 @@ hr{
     color: #000;
     font-size: 1.125rem;
     font-weight: 600;
-    height: 80px;
+    height: 85px;
     text-align: center;
-    width: 80px;
+    width: 85px;
 }
 .hexagon:before {
     content: "";
