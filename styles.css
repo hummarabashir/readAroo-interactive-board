@@ -1,0 +1,151 @@
+body {
+    background-color: #fff6f0;
+    text-align: center;
+    color: #264653;
+    font-family: "Mansalva", cursive;
+  }
+  
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: #2a9d8f;
+    font-size: 3em;
+  }
+  
+  .subheading {
+    font-size: 1.5em;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .block {
+    margin: 0.5em;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .block:nth-child(2n) .letter {
+    color: #e9c46a;
+  }
+  .block:nth-child(3n) .letter {
+    color: #264653;
+  }
+  .block:nth-child(5n) .letter {
+    color: #2a9d8f;
+  }
+  .block:nth-child(7n) .letter {
+    color: #f4a261;
+  }
+  
+  .letter {
+    font-weight: bold;
+    font-size: 4em;
+    color: #e76f51;
+    text-transform: uppercase;
+  }
+  
+  .selectedLetter {
+    background-color: #eed9cb;
+    border-radius: 50%;
+  }
+  
+  /*=============================================
+=      Reading Section     =
+=============================================*/
+
+.audioControls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.audioControls button{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: #264653;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    vertical-align: bottom;
+    margin-right: 0.75em;
+    min-height: 3.5em;
+    min-width: 6em;
+    /* border-radius: 50%; */
+    /* border: 2px solid #24408e; */
+    /* background-color: transparent; */
+    cursor: pointer;
+}
+
+.readaloud_playButton:before {
+    display: block;
+    content: "";
+    /* height: 1em; */
+    width: 1em;
+    margin: 0 auto;
+    border-color: transparent transparent transparent #f29f04;
+    transition: 100ms all ease;
+    will-change: border-width;
+    border-style: solid;
+    border-width: 0.6em 0 0.6em 1.1em;
+    position: relative;
+    left: 2px;
+  }
+
+  .readaloud_stopButton:before {
+    display: block;
+    content: "";
+    height: 0.85em;
+    width: 0.85em;
+    margin: 0 auto;
+    background-color: #f29f04;
+  }
+
+  .readaloud_speedToggle:before {
+    display: block;
+    content: "";
+    margin: 0 auto;
+    height: 1.6em;
+    width: 1.6em;
+    background: url(./media/snail-icon.svg) center center;
+    background-repeat: no-repeat;
+    background-size: 105%;
+  }
+  
+  .customHighlighted {
+    background-color: #eed9cb;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+.readaloud_playButton[data-pressed='true'] {
+    background-color: #eed9cb;
+}
+
+.readaloud_speedToggle[data-pressed='true'] {
+    background-color: #eed9cb;
+}
+
+.readaloud_playButton[data-playing='true']:before {
+    margin: 0 auto;
+    border-style: double;
+    border-width: 0px 0 0px 1em;
+    height: 1em;
+}
+

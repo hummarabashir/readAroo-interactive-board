@@ -1,0 +1,151 @@
+:root {
+    --dark-navy: #1F354B;
+    --navy: #294461;
+    --green: #11C684;
+    --purple: #6B74E0;
+    --pink: #F878B5;
+    --blue: #0671D5;
+    --yellow: #F7BF31;
+    --light-blue: #6CDFEF;
+  }
+  
+  * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 375px;
+  }
+  
+  body {
+    background-color: var(--dark-navy);
+    color: white;
+    margin: 1em;
+    height: 100vh;
+    background-image: url("./media/blob.fa5e1835bd2c64a45308.svg");
+    background-position: -180px 150px;
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color:white;
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin: 1em;
+  }
+  
+  .title {
+    color: var(--yellow);
+    margin: 0;
+  }
+  
+  .title-span {
+    color: white;
+    font-weight: 200;
+  }
+  
+  .title-image {
+    width: 60px;
+    height: 55px;
+    margin: 0;
+    padding-right: 5px;
+  }
+  
+  .back-arrow {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .toggle {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    font-size: 1.25rem;
+  }
+  
+  .home-section {
+    padding-bottom: 0.5em;
+  }
+  
+  .phase-two, .phase-three, .phase-five, .quiz-button, .game-button  {
+      border-radius: 16px;
+      /* width: 200px; */
+      height: 120px;
+      margin: 1em auto;
+      padding: 1em;
+      display: flex;
+      transition: all .2s ease-in-out;
+  }
+  
+  
+  .phase-two:hover, .phase-three:hover, .phase-five:hover, .quiz-button:hover  {
+    transform: scale(1.1);
+  }
+  
+  .phase-two {
+      background-color: var(--purple);
+  }
+  
+  .phase-three {
+    background-color: var(--green);
+  }
+  
+  .phase-five {
+    background-color: var(--blue);
+  }
+  
+  .quiz-button {
+    background-color: var(--pink);
+  }
+  
+  .dove, .feather, .butterfly {
+    font-size: 3.5rem;
+    margin-top: auto;
+  }
+  
+  .greeting {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 1.25rem;
+  }
+  .hexagon, .hexagon:before {
+    background: #f7bf31;
+    background: var(--yellow);
+}
+hr{
+    border-color: #476d96;
+}
+
+.hexagon {
+    -webkit-clip-path: polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%);
+    clip-path: polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%);
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 600;
+    height: 80px;
+    text-align: center;
+    width: 80px;
+}
+.hexagon:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
