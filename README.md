@@ -5,3 +5,5 @@
 
 <img src="chartone.png" alt="readAroo chart" />
 
+<img src="charttwo.png" alt="readAroo chart" />
+
