@@ -88,6 +88,11 @@
   .home-section {
     padding-bottom: 0.5em;
   }
+
+  .homeimg {
+    width: 4rem;
+    margin-top: auto;
+  }
   
   .phase-two, .phase-three, .phase-five, .quiz-button, .game-button  {
       border-radius: 16px;
